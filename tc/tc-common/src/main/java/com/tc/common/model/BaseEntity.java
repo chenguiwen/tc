@@ -29,7 +29,7 @@ public class BaseEntity implements Serializable{
 	 * 创建时间
 	 * */
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	private Date creationTime;
+	private Date createTime;
 	
 	/**
 	 * 修改人
@@ -40,7 +40,7 @@ public class BaseEntity implements Serializable{
 	 * 修改时间
 	 * */
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	private Date modifiedTime;
+	private Date updateTime;
 	
 	/**
 	 * 删除标记
@@ -81,12 +81,12 @@ public class BaseEntity implements Serializable{
 		this.creator = creator;
 	}
 
-	public Date getCreationTime() {
-		return creationTime;
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setCreationTime(Date creationTime) {
-		this.creationTime = creationTime;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 	public String getModifier() {
@@ -97,12 +97,12 @@ public class BaseEntity implements Serializable{
 		this.modifier = modifier;
 	}
 
-	public Date getModifiedTime() {
-		return modifiedTime;
+	public Date getUpdateTime() {
+		return updateTime;
 	}
 
-	public void setModifiedTime(Date modifiedTime) {
-		this.modifiedTime = modifiedTime;
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
 	}
 
 	public Integer getDr() {

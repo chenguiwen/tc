@@ -24,8 +24,8 @@ public class ColumnInfo extends BaseEntity {
 	private String columnComment;
 	
     /** 
-            * 列配置 
-    * */
+     * 列配置 
+     * */
     private ColumnConfigInfo configInfo;
     
     /**
