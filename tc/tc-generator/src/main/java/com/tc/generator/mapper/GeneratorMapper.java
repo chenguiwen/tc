@@ -33,6 +33,6 @@ public interface GeneratorMapper {
 	/**
 	 * @description 根据表名查询列
 	 * */
-	public List<ColumnInfo> selectColumnInfoByTableName(String tableName);
+	public List<ColumnInfo> selectTableColumnsByTableName(String tableName);
 	
 }

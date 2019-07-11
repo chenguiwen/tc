@@ -1,0 +1,5 @@
+generator:
+	author: chengw
+	packagePath: com.tc.system
+	removePre: true
+	tablePrefix:sys_

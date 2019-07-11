@@ -40,7 +40,7 @@
 	</select>
 	
 	<!-- 根据表名查询列 -->
-	<select id="selectColumnInfoByTableName" parameterType="String" resultMap="ColumnInfoResult">
+	<select id="selectTableColumnsByTableName" parameterType="String" resultMap="ColumnInfoResult">
 		select column_name,data_type,column_comment,extra from information_schema.columns
 		where table_name = #{tableName} and table_schema = (select database()) order by ordinal_position
 	</select>

@@ -51,11 +51,11 @@ public class TableInfo extends BaseEntity {
 		TableName = tableName;
 	}
 
-	public String getTableNote() {
+	public String getTableComment() {
 		return TableComment;
 	}
 
-	public void setTableNote(String tableComment) {
+	public void setTableComment(String tableComment) {
 		TableComment = tableComment;
 	}
 
@@ -74,6 +74,7 @@ public class TableInfo extends BaseEntity {
 	public ColumnInfo getLastColumn() {
 		ColumnInfo column = null;
 		if(null != columns && 0 != columns.size()) {
+			//数据库第一个字段即为主键
 			column = columns.get(0);
 		}
 		return column;
