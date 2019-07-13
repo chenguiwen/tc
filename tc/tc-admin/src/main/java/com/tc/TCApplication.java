@@ -12,8 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2019年7月11日
  * @Time 下午8:38:39
  */
-
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.tc.*"})
+//@SpringBootApplication//(exclude={DataSourceAutoConfiguration.class})
 public class TCApplication {
 
 	/**

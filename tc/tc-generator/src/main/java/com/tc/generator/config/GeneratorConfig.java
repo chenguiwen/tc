@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix = "generator") //配置成读取配置文件的样式，所有值从配置文件读取
-@PropertySource(value = {"classpath:generator.yml"})//指定读取的配置文件
+@PropertySource(value = { "classpath:generator.yml" })//指定读取的配置文件
 public class GeneratorConfig {
 
 	/**
@@ -56,7 +56,7 @@ public class GeneratorConfig {
 	}
 
 	@Value("${packagePath}")
-	public static void setPackagePath(String packagePath) {
+	public void setPackagePath(String packagePath) {
 		GeneratorConfig.packagePath = packagePath;
 	}
 
@@ -65,7 +65,7 @@ public class GeneratorConfig {
 	}
 
 	@Value("${removePre}")
-	public static void setRemovePre(boolean removePre) {
+	public void setRemovePre(boolean removePre) {
 		GeneratorConfig.removePre = removePre;
 	}
 
@@ -74,7 +74,7 @@ public class GeneratorConfig {
 	}
 
 	@Value("${tablePrefix}")
-	public static void setTablePrefix(String tablePrefix) {
+	public void setTablePrefix(String tablePrefix) {
 		GeneratorConfig.tablePrefix = tablePrefix;
 	}
 }
