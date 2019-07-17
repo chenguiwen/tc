@@ -3,6 +3,7 @@
  */
 package com.tc;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,8 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2019年7月11日
  * @Time 下午8:38:39
  */
-@SpringBootApplication(scanBasePackages = {"com.tc.*"})
-//@SpringBootApplication//(exclude={DataSourceAutoConfiguration.class})
+@SpringBootApplication
+@MapperScan({"com.tc.*.mapper"})
+//@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class TCApplication {
 
 	/**

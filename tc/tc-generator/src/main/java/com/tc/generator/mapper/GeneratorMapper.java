@@ -5,7 +5,6 @@ package com.tc.generator.mapper;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import com.tc.generator.model.ColumnInfo;
@@ -18,7 +17,6 @@ import com.tc.generator.model.TableInfo;
  * @Date 2019年7月10日
  * @Time 下午8:32:24
  */
-@Mapper
 @Repository
 public interface GeneratorMapper {
 

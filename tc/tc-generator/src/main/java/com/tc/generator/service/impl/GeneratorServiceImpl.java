@@ -17,6 +17,7 @@ import org.apache.velocity.app.Velocity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.tc.generator.config.GeneratorConfig;
 import com.tc.generator.mapper.GeneratorMapper;
@@ -31,6 +32,7 @@ import com.tc.generator.utils.GeneratorUtil;
  * @Date 2019年7月10日
  * @Time 下午8:31:42
  */
+@Service
 public class GeneratorServiceImpl implements IGeneratorService {
 
 	@Autowired

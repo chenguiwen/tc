@@ -5,6 +5,7 @@ package com.tc.generator.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.tc.generator.model.TableInfo;
